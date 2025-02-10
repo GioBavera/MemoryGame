@@ -1,7 +1,15 @@
-Juego de la memoria o MemoryGame hecho en java. El juego consiste en sacar dos cartas iguales para poder llevarte el par y sumar un punto, en caso contrario, volver a probar. 
+El clasico 'Juego de la Memoria' o 'Memory Game' desarrollado en Java. El objetivo es encontrar pares de cartas iguales: si acertas, te llevas el par y sumas un punto; de lo contrario, las cartas se vuelven a voltear y debes intentarlo nuevamente.
 
-En esta adaptacion en Java, hay dos modos de juegos:
-  - Modo SINGLEPLAYER: el jugador debe resolver todo el tablero en el menor tiempo posible.
-  - Modo MULTIPLAYER: dos jugadores compiten entre si para llevarse la mayor cantidad de pares iguales. El que mas tenga a la hora de estar vacio el tablero, gana.
+En esta implementacion del juego, se incluyeron dos modos de juego:
+  -  SINGLEPLAYER: El jugador debe encontrar todos los pares en el menor tiempo posible.
+  -  MULTIPLAYER: Dos jugadores compiten por obtener la mayor cantidad de pares. Cuando el tablero queda vacío, gana quien haya reunido más pares.
 
-Para poder llevarlo a cabo, se utilizo una interfaz grafica (.swing) para los menus asi como para el propio tablero con las fichas. Las fichas son banderas de paises. Cuenta con sonidos para diferentes cosas.
+Caracteristicas del Programa: 
+  - Las fichas son banderas de paises, habiendo disponible 46 banderas.
+  - Eleccion de tamaño de tablero: 4x4, 6x6, 8x8.
+  - Interfaz Grafica (.swing).
+  - Efectos de sonidos.
+  - Registro de puntajes y tiempos en archivos .txt. Aca se diferencias en los modos de juego:
+      - Singleplayer utiliza 3 archivos de texto (puntajes4.txt, puntajes6.txt, puntajes8.txt). Los puntajes se guardan de acuerdo al tamaño del tablero ue se eligio.
+      - Multiplayer: aca se guarda todo en un mismo archivo: historial.txt.
+  - Tabla de puntajes/resultados visible antes de que inicie la partida. 
